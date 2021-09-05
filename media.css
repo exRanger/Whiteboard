@@ -1,0 +1,190 @@
+@media (max-width: 578px) {
+    .toolbar{
+        top: 15%;
+    }
+    div.header{
+        align-items: flex-start;
+    }
+    /* Стили для устройств с шириной viewport, находящейся в диапазоне 768px - 991px */
+    .navbar__top{
+        flex-basis: 0;
+        display: block;
+    }
+    .title_page{
+    
+        
+        font-size: 10px;
+         
+        flex-basis: 100px;
+        line-height: 10px;
+        
+    }
+     
+    .section_redo-undo div{
+    
+     
+       
+      
+      cursor: pointer;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+       
+      background: rgb(68, 118, 233);
+      }
+      div.header a[download] {
+        
+        justify-content: center;
+        background: rgb(68, 118, 233);
+        text-decoration: none;
+        color:white;
+        border-radius: 3px;
+         
+        height: 100px;
+        font-size: 1em;
+        
+         
+      } 
+
+      .setGrid{
+         
+        width: 68px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        
+      }
+
+      div.header{
+        display: flex;
+         
+        
+       
+        
+         
+         
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .a2a_default_style{
+        position: absolute;
+        bottom: 15%;
+        right: 0;
+      }
+    }
+    @media (max-width: 900px) {
+        .toolbar{
+            top: 15%;
+        }
+        .navbar__top{
+            flex-basis: 0;
+        }
+        .title_page{
+            margin: 0;
+            font-size: 15px;
+             
+            flex-basis: 100px;
+            line-height: 25px;
+            
+        }
+         
+        .section_redo-undo div{
+        display: flex;
+        align-items: center;
+           
+          height: 32px;
+          line-height: 32px;
+          cursor: pointer;
+          text-align: center;
+          color: white;
+          font-weight: bold;
+           
+          background: rgb(68, 118, 233);
+          }
+          div.header a[download] {
+            display: flex;
+            justify-content: center;
+            background: rgb(68, 118, 233);
+            text-decoration: none;
+            color:white;
+            border-radius: 3px;
+             
+            height: 35px;
+            font-size: 1em;
+            line-height: 35px;
+             
+          } 
+    
+          .setGrid{
+            height: 32px;
+            width: 168px;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+             
+           
+            
+          }
+    
+          div.header{
+            display: flex;
+             
+            
+           
+            
+             
+             
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          .a2a_default_style{
+            position: absolute;
+            bottom: 15%;
+            right: 0;
+          }
+
+
+
+    }
+    /* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше) */
+    @media (max-width: 992px) {
+        .a2a_default_style{
+            position: absolute;
+            bottom: 6%;
+            right: 0;
+          }
+          div.header a[download] {
+            display: flex;
+            justify-content: center;
+            background: rgb(68, 118, 233);
+            text-decoration: none;
+            color:white;
+            border-radius: 3px;
+             
+            height: 35px;
+            font-size: 1em;
+            line-height: 35px;
+          }
+      /* Стили для устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+    }
+    
+    /* Устройства с большим экраном (компьютеры, 1200px и выше) */
+    @media (max-width: 1200px) {
+         
+          div.header a[download] {
+            display: flex;
+            justify-content: center;
+            background: rgb(68, 118, 233);
+            text-decoration: none;
+            color:white;
+            border-radius: 3px;
+             
+            height: 35px;
+            font-size: 1em;
+            line-height: 35px;
+          }
+          .a2a_default_style{
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+          }
+      /* Стили для устройств с шириной viewport >1200px */
+    }

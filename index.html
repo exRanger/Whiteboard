@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/svg/bg-svg/index.css">
+    <script src="https://kit.fontawesome.com/f26407eade.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="http://cdn.sketchpad.pro/dist/current/sketchpad.min.js"></script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    
+    <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="header">
+          <div class="title_page">Online Whiteboard Free (OWF)</div>
+
+
+
+          <div class="navbar__top">
+
+          <div class="section_redo-undo"> 
+            <div class="section special">
+                <div id="tool-undo" class="button undo"><i class="fas fa-undo"> </i> </div>
+            </div>
+            <div class="section special">
+             <div id="tool-redo" class="button redo"><i class="fas fa-redo"></i></div>
+              </div>
+              <div class="section special">
+                <div id="tool-zoom-out" class="button"><i class="fa fa-search-minus" aria-hidden="true"></i></div>
+              </div>
+              <div class="section secial">
+                <div id="tool-zoom-in" class="button"><i class="fa fa-search-plus" aria-hidden="true"></i></div> 
+              </div>
+            </div>
+            <div class="section_redo-undo">
+              <select class="setGrid"name="" id="">
+                <option   value="Dot">Dot grid</option>
+                <option value="Line">Line grid</option>
+                <option selected="selected" value="Pure">Pure</option> 
+              </select>
+            </div>
+          </div>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_email"></a>
+        </div>
+        <a id="tool-save" download href="#">Download paint</a>
+          </div> 
+        </div>
+        <div data-v-ebbacb64="" id="floating-menu" >
+          <div data-v-ebbacb64="" role="group" aria-label="tools" class="btn-group unselectable">
+              <div data-v-ebbacb64="" class="d-flex flex-row align-items-center">
+                  <select data-v-28064cda="" data-v-ebbacb64="" class="custom-select custom-select-sm" style="width: 150px;">
+                      <option data-v-28064cda="" value="open sans">Open Sans</option> 
+                      <option data-v-28064cda="" value="arial">Arial</option>
+                      <option data-v-28064cda="" value="courier prime">Courier Prime</option>
+                      <option data-v-28064cda="" value="caveat">Caveat</option>
+                      <option data-v-28064cda="" value="tahoma">Tahoma</option> 
+                      <option data-v-28064cda="" value="cabin sketch">Cabin Sketch</option> 
+                      <option data-v-28064cda="" value="verdana">Verdana</option>
+                      <option data-v-28064cda="" value="montserrat">Montserrat</option>
+                      <option data-v-28064cda="" value="georgia">Georgia</option>
+                      <option data-v-28064cda="" value="comic sans ms">Comic Sans MS</option> 
+                      <option data-v-28064cda="" value="times new roman">Times New Roman</option>
+          <!----></select>
+                  <select data-v-d6eb0194="" data-v-ebbacb64="" class="custom-select custom-select-sm" style="width: 60px;">
+                      <option data-v-d6eb0194="" value="12">12</option>
+                      <option data-v-d6eb0194="" value="14">14</option> <option data-v-d6eb0194="" value="20">20</option> 
+                      <option data-v-d6eb0194="" value="26">16</option> 
+                      <option data-v-d6eb0194="" value="25">25</option> <option data-v-d6eb0194="" value="40">40</option>
+                      <option data-v-d6eb0194="" value="45">45</option> 
+                      <option data-v-d6eb0194="" value="50">50</option> <option data-v-d6eb0194="" value="100">100</option>
+                   </select>       
+                                </button>        
+                    </div>
+                </div>
+              <div data-v-1c209422="" data-v-ebbacb64="" role="group" class="btn-group btn-group-sm">
+                   <input id='inputPalette' type="color" id="head" name="head" value="#e66465">                 
+                    <div data-v-ebbacb64="" aria-labelledby="More" class="dropdown-menu">
+                    <a data-v-ebbacb64="" href="javascript:void(0)" class="dropdown-item">Send Front</a>
+                    <a data-v-ebbacb64="" href="javascript:void(0)" class="dropdown-item">Send Back</a>
+                    <a data-v-ebbacb64="" href="javascript:void(0)" class="dropdown-item">Duplicate down</a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+            <div class="">
+              <div class="toolbar" id="tools">
+                 <div class="section drawing">
+                 <div id="tool-pen" class="button active"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                 <div id="tool-highlighter" class="button"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
+              </div>
+          <div class="section files">
+            <div id="reset" class="button"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+            <div id="tool-rainbow" class="button rbw"><i class="fa fa-magic" aria-hidden="true"></i></div>
+          </div>
+          <div class="section drawing">
+            <div id="tool-line" class="button line">╱</div>
+            <div id="tool-rectangle" class="button rect"><i class="fa fa-square-o" aria-hidden="true"></i></div>
+            <div id="tool-circle" class="button circ"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
+            <div id="tool-type" class="button font"><i class="fa fa-font" aria-hidden="true"></i></div>
+
+            <div class="section rubber">
+              <div id="tool-eraser" class="button"><i class="fa fa-eraser" aria-hidden="true"></i></div>
+              <div id="tool-cutout" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></div>
+            </div>
+            <div class="section special">
+              <div id="tool-rotate-viewport" class="button rotate-viewport"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></div>
+              <div id="tool-move-viewport" class="button move-viewport"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="section special"></div>
+              <span id="toolName">Tool name</span>
+            </div>
+            <div id="size" class="section size">
+              <input class="slider" id="size-slider" type ="range" min ="1" max="25" step ="1" value ="1"/>
+            </div>
+              <h6>Color:</h6>
+                <input id='pe3' value="#994999" type="color">
+              
+               
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div id="sketchpad"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="/svg/bg-svg/index.js"></script>
+  <script src="sketch.min.js.js"></script>
+  <!-- <script src="sketchpad.min.js"></script> -->
+  <script src="/index.js"></script>
+</body>
+</html>

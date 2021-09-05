@@ -1,0 +1,162 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.1);
+  position: relative;
+  cursor: crosshair;
+}
+canvas{
+   
+}
+div.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 35px;
+  line-height: 35px;
+  font-size: 1.2em;
+   
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#inputPalette{
+  cursor: pointer;
+  max-width: 25px;
+  max-height: 25px;
+  margin: 3px;
+  border: 1px solid black;
+}
+div.header a[download] {
+  background: rgb(32, 90, 226);
+  text-decoration: none;
+  color:white;
+  border-radius: 3px;
+  padding: 3px 3px;
+  min-width: 100px;
+   
+}
+#sketchpad {
+  position: relative;
+  top:0;
+  bottom: 0;
+  left:0;
+  bottom: 0;
+  max-width: 1920px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#pe2, #pe3{
+  cursor: pointer;
+}
+canvas{
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.toolbar {
+z-index: 200;
+position: fixed;
+left: 15px;
+top: 7%;
+max-width: 70px;
+background-color: #ffffff;
+text-align: center;
+display: inline-block;
+}
+
+
+.toolbar .section {
+ 
+margin-bottom: 8px;
+}
+.toolbar .slider {
+width: 100%;
+}
+
+.toolbar .button {
+border: 1px solid #d8d8d8;
+float: left;
+width: 32px;
+height: 32px;
+line-height: 32px;
+cursor: pointer;
+text-align: center;
+}
+
+.toolbar .button.active {
+background-color: rgba(0, 0, 0, .5);
+color: rgba(255, 255, 255, 1);
+}
+.section_redo-undo{
+  display: flex;
+  width: 128px;
+  flex-wrap: nowrap;
+}
+img[title*="sketchpad.pro"]{
+  display: none;
+}
+.navbar__top{
+  flex-basis: 50%;
+  display: flex;
+}
+.navbar__top *{
+  margin: 0;
+}
+.title_page{
+  
+}
+
+.section_redo-undo div{
+  width: 32px;
+height: 32px;
+line-height: 32px;
+cursor: pointer;
+text-align: center;
+color: white;
+font-weight: bold;
+ 
+background: rgb(68, 118, 233);
+}
+ 
+.setGrid{
+  
+  height: 32px;
+   
+  cursor: pointer;
+  text-align: center;
+  color: white;
+   
+ 
+  background: rgb(68, 118, 233);
+}
+
+.colorpalette, .palette, .alpha, .color-bg{
+  cursor: pointer;
+}
+
+.hue{
+}
+
+.section, .colorpicker{
+  
+}
+
+
+ 
+ #floating-menu[data-v-ebbacb64] {
+    display: none;
+    margin: 0;
+    padding-left: 5px;
+     
+    background-color: transparent;
+    position: absolute;
+    min-width: 245px;
+    left: 15px;
+    bottom: 10%;
+    z-index: 5000;
+    box-shadow: 3px 1px 5px 2px rgb(0 0 0 / 35%);
+}
